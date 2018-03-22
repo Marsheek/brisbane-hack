@@ -1,2 +1,47 @@
-<h1>Pages#customer</h1>
-<p>Find me in app/views/pages/customer.html.erb</p>
+<style media="screen">
+  a {
+    color: white;
+  }
+  a:hover {
+    color: white;
+  }
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 ml-auto mr-auto">
+      <!-- progress bar -->
+      <img src="<%= asset_path 'pb2.png' %>" class="img-fluid" alt="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 text-center ml-auto mr-auto">
+      <h2>7 people commit suicide every day</h2>
+      <p class="pt-3">Your donations help us save lives. Here at Life Savers we appreciate all types of donations. Fill out the form below and let us know who you are and provide us with an image of what you want to donate.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10 ml-auto mr-auto">
+      <div class="form-group">
+        <input placeholder="Name"type="text" class="form-control" id="usr">
+        <br>
+        <input placeholder="Contact Number"type="text" class="form-control" id="usr">
+        <br>
+        <input placeholder="Email"type="text" class="form-control" id="usr">
+        <br>
+        <label for="[object Object]">Please upload an image of the item you're donating:</label>
+        <br>
+        <button type="button" class="btn btn-primary btn-round mr-auto" style="padding: 5px 30px; font-size: 20px; margin-right: 0; background-color: #9b47be;"><a href="/pages/customer">Upload Image</a></button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 text-center ml-auto mr-auto">
+      <p class="pt-3">
+        <button type="button" class="btn btn-primary btn-round mr-0" style="padding: 10px 50px; font-size: 25px; margin-right: 0;"><a href="/pages/address">Confirm Details</a></button>
+      </p>
+
+    </div>
+  </div>
+</div>

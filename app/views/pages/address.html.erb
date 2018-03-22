@@ -1,2 +1,65 @@
-<h1>Pages#address</h1>
-<p>Find me in app/views/pages/address.html.erb</p>
+<style media="screen">
+  a {
+    color: white;
+  }
+  a:hover {
+    color: white;
+  }
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 ml-auto mr-auto">
+      <!-- progress bar -->
+      <img src="<%= asset_path 'pb3.png' %>" class="img-fluid" alt="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 text-center ml-auto mr-auto">
+      <!-- progress bar -->
+      <img src="<%= asset_path 'icons-01.png' %>" style="height: 140px;"class="img-fluid" alt="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 text-center ml-auto mr-auto">
+      <h2>Every day LifeSavers may save 50 lives</h2>
+      <p class="pt-4">Let us know your address so we can organise your pick up!</p>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-10 ml-auto mr-auto">
+      <div class="form-group pt-4">
+        <input placeholder="Street"type="text" class="form-control" id="usr">
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <input placeholder="Suburb"type="text" class="form-control" id="usr">
+          </div>
+          <div class="col-md-4">
+            <input placeholder="Postcode"type="text" class="form-control" id="usr">
+          </div>
+          <div class="col-md-4">
+            <select class="form-control" id="sel1">
+              <option>NSW</option>
+              <option>QLD</option>
+              <option>SA</option>
+              <option>NT</option>
+              <option>WA</option>
+              <option>TAS</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 text-center ml-auto mr-auto">
+      <p class="pt-3">
+        <button type="button" class="btn btn-primary btn-round mr-0" style="padding: 10px 50px; font-size: 25px; margin-right: 0;"><a href="/pages/pickup">Confirm Details</a></button>
+      </p>
+
+    </div>
+  </div>
+</div>

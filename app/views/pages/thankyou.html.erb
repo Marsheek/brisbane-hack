@@ -1,2 +1,38 @@
-<h1>Pages#thankyou</h1>
-<p>Find me in app/views/pages/thankyou.html.erb</p>
+<style media="screen">
+  a {
+    color: white;
+  }
+  a:hover {
+    color: white;
+  }
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 ml-auto mr-auto">
+      <!-- progress bar -->
+      <img src="<%= asset_path 'pb5.png' %>" class="img-fluid" alt="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 text-center ml-auto mr-auto">
+      <!-- progress bar -->
+      <img src="<%= asset_path 'like.png' %>" style="height: 140px;"class="img-fluid" alt="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 text-center ml-auto mr-auto">
+      <h2>Thank you</h2>
+      <h5 class="pt-4">LifeSavers really appreciate your support. Keep an eye on your inbox as one of our representatives will be intouch within 48 hours.</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10 text-center ml-auto mr-auto">
+      <p class="pt-3">
+        <button type="button" class="btn btn-primary btn-round mr-0" style="padding: 10px 50px; font-size: 25px; margin-right: 0;"><a href="/">Return to home</a></button>
+      </p>
+
+    </div>
+  </div>
+</div>

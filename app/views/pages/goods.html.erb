@@ -1,2 +1,172 @@
-<h1>Pages#goods</h1>
-<p>Find me in app/views/pages/goods.html.erb</p>
+<style media="screen">
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+
+  background-color: white;
+  display: none;
+
+}
+
+.checkbox label:after,
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 ml-auto mr-auto">
+      <!-- progress bar -->
+      <img src="<%= asset_path 'pb1.png' %>" class="img-fluid" alt="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 text-center ml-auto mr-auto">
+      <h2>Your donation helps us save lives</h2>
+      <p class="pt-3">Life saver appreciates all types of donations. All of our profits go to Life Line to support suicide prevention.</p>
+      <h4>Please select the type of goods you are donating</h4>
+      <p class="pt-3">You are able to select multiple types.</p>
+    </div>
+  </div>
+  <div class="row ml-auto mr-auto pt-4">
+    <div class="col-md-3 col-sm-6">
+      <img src="<%= asset_path 'furniture.jpg' %>" class="img-fluid" alt="">
+      <div class="text-center pt-3">
+
+
+        <div class="checkbox" style="padding-left: 74px;">
+            <label style="font-size: 1.5em">
+                <input type="checkbox" value="">
+                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+            </label>
+        </div>
+
+
+        <!-- <input style="width: 30px;" type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1"> -->
+      </div>
+
+
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="<%= asset_path 'white-goods.jpg' %>" class="img-fluid" alt="">
+      <div class="text-center pt-3">
+        <div class="checkbox" style="padding-left: 74px;">
+            <label style="font-size: 1.5em">
+                <input type="checkbox" value="">
+                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+            </label>
+        </div>
+        <!-- <input style="width: 30px;" type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1"> -->
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="<%= asset_path 'clothing.jpg' %>" class="img-fluid" alt="">
+      <div class="text-center pt-3">
+        <div class="checkbox" style="padding-left: 74px;">
+            <label style="font-size: 1.5em">
+                <input type="checkbox" value="">
+                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+            </label>
+        </div>
+        <!-- <input style="width: 30px;" type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1"> -->
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="<%= asset_path 'other.jpg' %>" class="img-fluid" alt="">
+      <div class="text-center pt-3">
+        <div class="checkbox" style="padding-left: 74px;">
+            <label style="font-size: 1.5em">
+                <input type="checkbox" value="">
+                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+            </label>
+        </div>
+        <!-- <input style="width: 30px;" type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1"> -->
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 text-center ml-auto mr-auto">
+
+        <p class="pt-3">For the safety of our people and customers please make sure items are appropriate, in good working condition, safe and not flammable.  We don’t accept helmets, hot water systems and baby goods that do not meet Australian Standards.</p>
+
+        <p class="pt-3">
+          I confirm my items comply with these standards.
+        </p>
+        <p class="pt-3">
+          <button type="button" class="btn btn-primary btn-round mr-0" style="padding: 10px 50px; font-size: 25px; margin-right: 0;"><a href="/pages/customer">Confirm Items</a></button>
+          <div class="row">
+        </p>
+
+
+
+    </div>
+  </div>
+
+    <div class="col-md-12">
+
+    </div>
+  </div>
+</div>

@@ -1,2 +1,62 @@
-<h1>Pages#pickup</h1>
-<p>Find me in app/views/pages/pickup.html.erb</p>
+<style media="screen">
+  a {
+    color: white;
+  }
+  a:hover {
+    color: white;
+  }
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 ml-auto mr-auto">
+      <!-- progress bar -->
+      <img src="<%= asset_path 'pb4.png' %>" class="img-fluid" alt="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 text-center ml-auto mr-auto">
+      <!-- progress bar -->
+      <img src="<%= asset_path 'icons-02.png' %>" style="height: 140px;"class="img-fluid" alt="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 text-center ml-auto mr-auto">
+      <h2>Every day LifeSavers may save 50 lives</h2>
+      <h5 class="pt-4">Please select from the pickup options available</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 ml-auto mr-auto">
+      <p class="pt-4">Pickup Day</p>
+      <div class="form-group pt-2">
+        <select class="form-control" id="sel1">
+          <option>Monday</option>
+          <option>Tuesday</option>
+          <option>Wednesday</option>
+          <option>Thursday</option>
+          <option>Friday</option>
+          <option>Saturday</option>
+          <option>Sunday</option>
+        </select>
+      </div>
+      <p class="pt-2">Pickup Times</p>
+      <div class="form-group pt-2">
+        <select class="form-control" id="sel1">
+          <option>10:00am - 11:00am</option>
+          <option>2:00pm - 3:00pm</option>
+          <option>4:00pm - 5:00pm</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 text-center ml-auto mr-auto">
+      <p class="pt-3">
+        <button type="button" class="btn btn-primary btn-round mr-0" style="padding: 10px 50px; font-size: 25px; margin-right: 0;"><a href="/pages/thankyou">Confirm Pickup</a></button>
+      </p>
+
+    </div>
+  </div>
+</div>
