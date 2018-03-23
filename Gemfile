@@ -7,7 +7,7 @@ end
 
 gem 'bootstrap'
 gem 'font-awesome-sass'
-
+gem 'jquery-rails'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

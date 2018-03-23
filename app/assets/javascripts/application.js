@@ -12,6 +12,7 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery
 //= require bootstrap
 //= require paper-kit
 //= require_tree .
