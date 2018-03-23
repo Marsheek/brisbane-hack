@@ -1,0 +1,69 @@
+<style>
+   #map {
+    height: 700px;
+    width: 100%;
+   }
+</style>
+
+<div class="row">
+  <div class="col-md-6 col-sm-12">
+    <div class="w-75 ml-auto mr-auto pt-5">
+      <div class="row">
+        <div class="col-md-10">
+          <input placeholder="Suburb" type="text" class="form-control" id="usr">
+        </div>
+        <div class="col-md-2">
+
+          <button class="btn btn-primary" type="button" name="button"><i  class="fa fa-search"></i></button>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="pt-5">
+      <div class="card w-75 ml-auto mr-auto">
+        <div class="card-body">
+          <h5 class="card-title">LifeSavers Brisbane Storefront</h5>
+          <p class="card-text">Drop off your donations at our store front in Brisbane. Help save a life today!</p>
+          <a href="#" class="btn btn-primary">See Store Details</a>
+          <img src="<%= asset_path 'nav-logo.png' %>" style="height: 45px; float: right;" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="pt-5">
+      <div class="card w-75 ml-auto mr-auto">
+        <div class="card-body">
+          <h5 class="card-title">LifeSavers Sydney Dropoff Bin</h5>
+          <p class="card-text">Drop off your clothing donations at our bin in Brisbane. Remember you need to make sure the clothes go into the bin as the clothes outside the bin go to waste! Help save a life today!</p>
+          <a href="#" class="btn btn-primary">See Bin Details</a>
+            <img src="<%= asset_path 'nav-logo.png' %>" style="height: 45px; float: right;" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div id="map"></div>
+
+  </div>
+</div>
+<script>
+  function initMap() {
+    var uluru = {lat: -25.363, lng: 131.044};
+    var perth = {lat: -15.363, lng: 131.044};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+    var marker = new google.maps.Marker({
+      position: perth,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuVd57_cY4EySknVTuq7xMozHvWFEAjcY&callback=initMap">
+</script>

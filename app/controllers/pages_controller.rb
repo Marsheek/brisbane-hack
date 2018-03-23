@@ -19,4 +19,10 @@ class PagesController < ApplicationController
 
   def admin
   end
+
+  def dropoff
+  end
+
+  def business
+  end
 end

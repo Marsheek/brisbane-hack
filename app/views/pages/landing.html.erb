@@ -15,10 +15,18 @@
   }
   .pad-top {
     margin-top: -60px;
-}
-  @media (max-width 500px){
+  }
+  .img-style {
+    height: 400px;
+  }
+  @media (max-width: 500px) {
+    .img-style {
+      height: 250px;
+    }
+  }
+  @media (max-width: 500px) {
       .pad-top {
-        padding-top: 80px;
+        padding-top: 10px;
     }
   }
 </style>
@@ -30,25 +38,25 @@
         <!-- <img src="<%# asset_path 'logo.png'%>" alt="" style="height:320px; width:auto;" class="img-fluid"> -->
         <div class="row pad-top">
           <div class="col-md-8">
-            <h1 class="title text-left pt-5 pad-top">We bring a Life Line to those in need.</h1>
+            <h1 class="title text-left pt-5">We bring a Life Line to those in need.</h1>
             <h3 class="description text-left" style="font-style:  italic;">Every donation to LifeSavers supports suicide prevention.</h3>
           </div>
           <div class="col-md-4 ml-auto mr-auto">
             <!-- progress bar -->
-            <img src="<%= asset_path 'logo.png' %>" class="pad-top img-fluid" alt="">
+            <img src="<%= asset_path 'logo.png' %>" class="img-style" alt="">
           </div>
         </div>
 
         <br>
         <div class="row">
           <div class="col-md-4 col-sm-12">
-              <button type="button" class="btn purple btn-round" style="padding: 10px 30px; font-size: 19px;"><a href="pages/goods">Find a drop off location</a></button>
+              <button type="button" href="pages/dropoff" class="btn purple btn-round" style="padding: 10px 30px; font-size: 19px;"><a href="pages/dropoff">Find a drop off location</a></button>
           </div>
           <div class="col-md-4 col-sm-12">
-              <button type="button" class="btn btn-primary btn-round" style="padding: 10px 50px; font-size: 19px;"><a href="pages/goods">Organise a pick up</a></button>
+              <button type="button" href="pages/goods" class="btn purple btn-round" style="padding: 10px 50px; font-size: 19px;"><a href="pages/goods">Organise a pick up</a></button>
           </div>
           <div class="col-md-4 col-sm-12">
-              <button type="button" class="btn purple btn-round" style="padding: 10px 30px; font-size: 19px;"><a href="pages/goods">Become a business donar</a></button>
+              <button type="button" href="pages/goods" class="btn purple btn-round" style="padding: 10px 30px; font-size: 19px;"><a href="pages/business">Become a business donar</a></button>
           </div>
         </div>
 
