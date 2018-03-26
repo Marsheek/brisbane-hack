@@ -1,24 +1,16 @@
-# README
+ruby-2.3.1@rails5rc1 used
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Production app found
+https://ancient-springs-27660.herokuapp.com/
 
-Things you may want to cover:
+To use in local environment:
 
-* Ruby version
+Navigate to life-savers app
 
-* System dependencies
+run a bundle command in your terminal
 
-* Configuration
+Run a server if you have ruby on rails installed with the below command in your terminal
 
-* Database creation
+rails s
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Navigate to http://localhost:3000 and see app.
